@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-undef": "off",
+    "no-console": "off",
+    "react/prop-types": "off",
+    "quotes": [
+      2,
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ]
+  }
+}

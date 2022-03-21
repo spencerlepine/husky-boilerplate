@@ -1,0 +1,34 @@
+{
+  "name": "husky-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencerlepine/husky-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencerlepine/husky-boilerplate/issues"
+  },
+  "homepage": "https://github.com/spencerlepine/husky-boilerplate#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.0"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.{js,md}": "prettier --write"
+  }
+}
